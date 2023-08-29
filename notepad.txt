@@ -1,0 +1,65 @@
+function showSearchResult(searchData){
+
+    var myHeaders = new Headers();
+
+        myHeaders.append("Content-Type", "application/json");
+
+        myHeaders.append("Authorization", "Bearer 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");
+
+ 
+
+    var raw = JSON.stringify({
+
+        "model": "text-davinci-003",
+
+        "prompt": `${searchData}`,
+
+        "temperature": 1,
+
+        "max_tokens": 256,
+
+        "top_p": 1,
+
+        "frequency_penalty": 0,
+
+        "presence_penalty": 0
+
+    });
+
+ 
+
+    var requestOptions = {
+
+        method: 'POST',
+
+        headers: myHeaders,
+
+        body: raw,
+
+        redirect: 'follow'
+
+    };
+
+    fetch("https://api.openai.com/v1/completions", requestOptions)
+
+    .then(response => response.json())
+
+    .then(result => {
+
+        choices = result.choices;
+
+        let str = "";
+
+        for (let i = 0; i < choices.length; i++) {
+
+            str += `${choices[i].text}\n`;
+
+        }
+
+        document.getElementById("idChat").value = str;
+
+    }).catch(error => console.log('error', error));
+
+ 
+
+}

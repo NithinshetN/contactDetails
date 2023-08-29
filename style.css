@@ -1,0 +1,127 @@
+* {
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-image: url(bg.svg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.box {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.74);
+}
+
+
+.dark {
+  width: 40%;
+  height: 65vh;
+  background-color: aliceblue;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.box1{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.74);
+}
+
+.dark1{
+  width: 30%;
+  height: 65vh;
+  background-color: aliceblue;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.form{
+  display:flex;
+}
+.heading{
+    display:flex;
+    justify-content: center;
+    background-color:#7895cb3e;
+    box-shadow: 0 0 10px #5d7bb3e0;
+}
+
+.heading h1{
+  color:aliceblue;
+  margin-top: 0.3rem;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    margin:2rem 0rem 0.5rem 0rem;
+    align-items: center;
+    
+}
+
+.input-group{
+    width:fit-content;
+}
+
+.input{
+    align-self: flex-start;
+    margin-left: 2rem;
+}
+
+.cons{
+    height: 80vh;
+    background-color: #09085749;
+    margin:0 auto;
+    height: fit-content;
+    width:70%;
+    padding: 0.9rem 0rem 0.2rem 0rem;
+    border-radius: 0.3rem;
+}
+
+.deleteDark{
+  width:100%;
+  height:100vh;
+  position: fixed;
+  top:0;
+  display:none;
+  justify-content: center;
+  align-items:center;
+  background-color: rgba(0, 0, 0, 0.74);
+}
+
+.whiteBox{
+  width:27%;
+  height: 20vh;
+  background-color: aliceblue;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:1rem;
+  border-radius: 1rem;
+}
+.pagination{
+  display:flex;
+  justify-content: space-between;
+}
+
+.whiteBox p{
+  font-weight: 500;
+}
